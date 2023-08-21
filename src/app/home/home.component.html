@@ -1,11 +1,79 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class="col">
-      <h1>Home Component Works! <span class="material-icons">thumb_up</span></h1>
+<!--
+  Title: home.component.html
+  Author: Richard Krasso
+  Date: 8/20/2023
+  Modified By: William Egge
+  Description: The home component for the Nodebucket application.
+ -->
+
+<div class="container-fluid pt-2">
+  <h1 class="text-center">Welcome to the Nodebucket App!</h1>
+  <div class="row mt-5">
+    <div class="col-sm-4">
+      <figure>
+        <a
+          routerLink="
+        /task-management/my-tasks"
+        >
+          <img
+            class="img-fluid"
+            src="./assets/todo.jpg"
+            alt="person writing bucket list"
+          />
+        </a>
+
+        <p>
+          Photo by Behnam Norouzi on
+          <a href="https://unsplash.com/photos/eFCd2VdEHus">Unsplash</a>
+        </p>
+        <h1>Tasks</h1>
+        <p>
+          Nodebucket is a task management application that allows users to
+          manage and track tasks.
+        </p>
+      </figure>
+    </div>
+
+    <div class="col-sm-4">
+      <figure>
+        <a routerLink="#">
+          <img
+            class="img-fluid"
+            src="./assets/about-us.jpg"
+            alt="framed eyeglasses on top of a book"
+          />
+        </a>
+        <p>
+          Photo by David Clode on
+          <a href="https://unsplash.com/photos/5uU8HSpfwkI">Unsplash</a>
+        </p>
+        <h1>About Us</h1>
+        <p>
+          Learn more about the Nodebucket team and why Nodebucket is right for
+          you!
+        </p>
+      </figure>
+    </div>
+
+    <div class="col-sm-4">
+      <figure>
+        <a routerLink="">
+          <img
+            class="img-fluid"
+            src="./assets/contact-us.jpg"
+            alt="contact scrable photo"
+          />
+        </a>
+        <p>
+          Photo by Pawel Czerwinski on
+          <a href="https://unsplash.com/photos/-0xCCPIbl3M">Unsplash</a>
+        </p>
+        <h1>Contact Us</h1>
+        <p>
+          Have a question? We're here to help! Send us an email and we'll get
+          back to you as soon as possible.
+        </p>
+      </figure>
     </div>
   </div>
-
-  <a routerLink="/security">Test Security Module</a>
 </div>
-
-

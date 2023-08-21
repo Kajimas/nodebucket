@@ -1,7 +1,9 @@
 /**
  * Title: footer.component.ts
  * Author: Professor Krasso
- * Date: 8/5/23
+ * Date: 8/20/2023
+ * Modified By: William Egge
+ * Description: the footer component file for the application. This file is used to display a working footer.
  */
 
 // imports statements

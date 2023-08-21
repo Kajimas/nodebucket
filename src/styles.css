@@ -1,1 +1,67 @@
-/* You can add global styles to this file, and also import other style files */
+/* *
+ * Title: styles.css
+ * Author: Professor Krasso
+ * Date: 8/20/2023
+ * Modified By: William Egge
+ * Description: Styles for the application. It is based on the color scheme of Slytherin House from Harry Potter.
+ */
+
+:root {
+  --slytherin-green: rgb(10, 95, 20); /* Slytherin Green */
+  --slytherin-silver: rgb(200, 200, 200); /* Slytherin Silver */
+  --slytherin-black: rgb(26, 26, 26); /* Slytherin Black */
+  --slytherin-grey: rgb(50, 50, 50); /* Slytherin Grey */
+}
+
+.text-underline-hover {
+  text-decoration: none;
+}
+
+.text-underline-hover:hover {
+  text-decoration: underline;
+}
+
+.full-height {
+  height: 100vh !important;
+}
+
+.link:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 576px) {
+  .dropdown-menu {
+    background-color: var(--slytherin-black) !important;
+    color: var(--slytherin-silver) !important;
+  }
+
+  .dropdown-item {
+    color: var(--slytherin-silver) !important;
+  }
+
+  .dropdown-item:hover {
+    cursor: pointer;
+    background-color: var(--slytherin-black) !important;
+    color: var(--slytherin-silver) !important;
+  }
+
+  .material-icons {
+    color: var(--slytherin-silver) !important;
+  }
+}
+
+body {
+  color: var(--slytherin-silver) !important;
+  background-color: var(--slytherin-black) !important;
+}
+
+.btn {
+  background-color: var(--slytherin-green) !important;
+}
+
+input {
+  background-color: var(--slytherin-grey) !important;
+  color: var(--slytherin-silver) !important;
+}
+
+

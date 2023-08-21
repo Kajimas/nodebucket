@@ -1,0 +1,16 @@
+/**
+ * Title: nav.component.css
+ * Author: William Egge
+ * Date: 8/20/2023
+ * Description: The nav component css file. This is the navigation bar
+  for the application.
+ */
+
+nav {
+  background-color: var(--slytherin-green) !important;
+}
+
+button {
+  background-color: var(--slytherin-green) !important;
+  color: var(--slytherin-silver) !important;
+}

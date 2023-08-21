@@ -1,0 +1,10 @@
+/**
+ * Title: footer.component.css
+ * Author: William Egge
+ * Date: 8/20/2023
+ * Description: The footer component css file. This is the footer for the application.
+ */
+
+footer{
+  background-color: var(--slytherin-green) !important;
+}
