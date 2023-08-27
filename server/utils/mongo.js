@@ -9,13 +9,16 @@
 "use strict";
 
 const { MongoClient } = require("mongodb");
+const config = require("./config");
 
-const MONGO_URL =
-  "mongodb+srv://nodebucket_user:s3cret@cluster0.sloy5er.mongodb.net/nodebucket?retryWrites=true&w=majority";
+const MONGO_URL = config.DB_URL;
 
 const mongo = async (operations, next) => {
   try {
     console.log("Connecting to MongoDB Atlas...");
+
+    console.log("MONGO_URL", MONGO_URL);
+    console.log("DB_NAME", config.DB_NAME);
 
     // connect to MongoDB cluster
     const client = await MongoClient.connect(MONGO_URL, {
@@ -24,7 +27,7 @@ const mongo = async (operations, next) => {
     });
 
     // select the database
-    const db = client.db("nodebucket");
+    const db = client.db(config.DB_NAME);
     console.log("Connected to MongoDB Atlas");
 
     // Execute the operations
@@ -36,8 +39,7 @@ const mongo = async (operations, next) => {
     console.log("Connection closed");
   } catch (err) {
     const error = new Error(
-      "An error occurred while connecting to MongoDB",
-      err
+      `An error occurred while connecting to MongoDB ${err.message}}`
     );
     error.status = 500;
     console.log("An error occurred while connecting to MongoDB", err);
