@@ -1,3 +1,11 @@
+/**
+ * Title: task-management.module.ts
+ * Author: Professor Krasso
+ * Date: 8/27/2023
+ * Modified By: William Egge
+ * Description: the task management module file for the application.
+ */
+
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Item } from './item.interface';

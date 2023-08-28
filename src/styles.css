@@ -7,10 +7,14 @@
  */
 
 :root {
-  --slytherin-green: rgb(10, 95, 20); /* Slytherin Green */
-  --slytherin-silver: rgb(200, 200, 200); /* Slytherin Silver */
-  --slytherin-black: rgb(26, 26, 26); /* Slytherin Black */
-  --slytherin-grey: rgb(50, 50, 50); /* Slytherin Grey */
+  --slytherin-green: hsl(125, 80%, 20%); /* Slytherin Green */
+  --slytherin-green2: hsl(110, 60%, 40%); /* Slytherin Green2 */
+  --slytherin-green3: hsl(95, 50%, 50%); /* Slytherin Green3 */
+  --slytherin-green4: hsl(70, 40%, 60%); /* Slytherin Green4 */
+  --slytherin-silver: hsl(0, 0%, 80%); /* Slytherin Silver */
+  --slytherin-white: #e6e6e6; /* Slytherin Silver */
+  --slytherin-black: hsl(0, 0%, 10%); /* Slytherin Black */
+  --slytherin-grey: hsl(0, 0%, 20%); /* Slytherin Grey */
 }
 
 .text-underline-hover {
@@ -55,8 +59,9 @@ body {
   background-color: var(--slytherin-black) !important;
 }
 
-.btn {
-  background-color: var(--slytherin-green) !important;
+
+button{
+  color: var(--slytherin-silver) !important;
 }
 
 input {
@@ -64,4 +69,6 @@ input {
   color: var(--slytherin-silver) !important;
 }
 
-
+a {
+  color: var(--slytherin-silver) !important;
+}

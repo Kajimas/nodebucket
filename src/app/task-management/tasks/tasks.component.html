@@ -30,7 +30,7 @@
   <!-- form goes here -->
   <div class="row justify-content-center pt">
     <div class="col-sm-10 col-md-8 col-lg-6">
-      <form [formGroup]="newTaskForm" (ngSubmit)="addTask();">
+      <form [formGroup]="newTaskForm" (ngSubmit)="addTask()">
         <div class="input-group mb-3">
           <input
             type="text"
@@ -51,7 +51,7 @@
         </div>
 
         <!-- testing -->
-        <div class="form-check form-check-inline">
+        <div class="form-check form-check-inline ">
           <input
             type="radio"
             class="form-check-input"
@@ -73,9 +73,7 @@
             id="meetingsRadio"
             value="meetings"
           />
-          <label for="meetingsRadio" class="form-check-label">
-            Meetings
-          </label>
+          <label for="meetingsRadio" class="form-check-label"> Meetings </label>
         </div>
 
         <!-- projects -->
@@ -88,9 +86,7 @@
             id="projectsRadio"
             value="projects"
           />
-          <label for="projectsRadio" class="form-check-label">
-            Projects
-          </label>
+          <label for="projectsRadio" class="form-check-label"> Projects </label>
         </div>
 
         <!-- other -->
@@ -103,41 +99,74 @@
             id="other"
             value="other"
           />
-          <label for="otherRadio" class="form-check-label">
-            Other
-          </label>
+          <label for="otherRadio" class="form-check-label"> Other </label>
         </div>
 
-<!-- error handling -->
-<div class="mt-2">
+        <!-- error handling -->
+        <div class="mt-2">
+          <!-- required -->
+          <div
+            *ngIf="
+              newTaskForm.controls['text'].touched &&
+              newTaskForm.controls['text'].hasError('required')
+            "
+          >
+            <div
+              class="alert alert-danger alert-dismissible fade show"
+              role="alert"
+            >
+              Please enter a task!
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="alert"
+                aria-label="Close"
+              ></button>
+            </div>
+          </div>
 
-  <!-- required -->
-  <div *ngIf="newTaskForm.controls['text'].touched && newTaskForm.controls['text'].hasError('required')">
-    <div class="alert alert-danger alert-dismissible fade show" role="alert">
-      Please enter a task!
-      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>
-  </div>
+          <!-- minlength -->
+          <div
+            *ngIf="
+              newTaskForm.controls['text'].touched &&
+              newTaskForm.controls['text'].hasError('minlength')
+            "
+          >
+            <div
+              class="alert alert-danger alert-dismissible fade show"
+              role="alert"
+            >
+              The task field must be at least 3 characters long!
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="alert"
+                aria-label="Close"
+              ></button>
+            </div>
+          </div>
 
-  <!-- minlength -->
-  <div *ngIf="newTaskForm.controls['text'].touched && newTaskForm.controls['text'].hasError('minlength')">
-    <div class="alert alert-danger alert-dismissible fade show" role="alert">
-      The task field must be at least 3 characters long!
-      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>
-  </div>
-
-  <!-- maxlength -->
-  <div *ngIf="newTaskForm.controls['text'].touched && newTaskForm.controls['text'].hasError('maxlength')">
-    <div class="alert alert-danger alert-dismissible fade show" role="alert">
-      The task field must be at most 50 characters long!
-      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>
-  </div>
-
-
-</div>
-
+          <!-- maxlength -->
+          <div
+            *ngIf="
+              newTaskForm.controls['text'].touched &&
+              newTaskForm.controls['text'].hasError('maxlength')
+            "
+          >
+            <div
+              class="alert alert-danger alert-dismissible fade show"
+              role="alert"
+            >
+              The task field must be at most 50 characters long!
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="alert"
+                aria-label="Close"
+              ></button>
+            </div>
+          </div>
+        </div>
       </form>
     </div>
   </div>
@@ -148,7 +177,7 @@
     <div class="col-sm-5 col-md-4 col-lg-3">
       <h4 class="text-center">ToDo</h4>
 
-      <div class="p-3 border bg-light">
+      <div class="p-3 border bg-dark">
         <div class="container">
           <!-- message for no todo tasks -->
           <div *ngIf="!todo || todo.length === 0">
@@ -157,7 +186,7 @@
           <!-- end message for no todo -->
 
           <div *ngFor="let item of todo" class="mt-2">
-            <div class="row border bg-white">
+            <div class="row border">
               <div class="col-sm-6">
                 <div class="card-body">
                   <button
@@ -187,7 +216,7 @@
     <div class="col-sm-5 col-md-4 col-lg-3">
       <h4 class="text-center">Done</h4>
 
-      <div class="p-3 border bg-light">
+      <div class="p-3 border bg-dark">
         <div class="container">
           <!-- message for no done tasks -->
           <div *ngIf="!done || done.length === 0">
@@ -196,7 +225,7 @@
           <!-- end message for no done -->
 
           <div *ngFor="let item of done" class="mt-2">
-            <div class="row border bg-white">
+            <div class="row border">
               <div class="col-sm-6">
                 <div class="card-body">
                   <button

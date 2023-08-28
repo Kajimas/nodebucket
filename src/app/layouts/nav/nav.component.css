@@ -14,3 +14,13 @@ button {
   background-color: var(--slytherin-green) !important;
   color: var(--slytherin-silver) !important;
 }
+
+.dropdown-menu {
+  color: var(--slytherin-silver) !important;
+  background-color: var(--slytherin-grey) !important;
+}
+
+li.dropdown-item {
+  color: var(--slytherin-silver) !important;
+}
+

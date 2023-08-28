@@ -147,7 +147,7 @@ router.post("/:empId/tasks", (req, res, next) => {
 
       // validate the request object
       const validator = ajv.compile(taskSchema);
-      const valid = validator({ task });
+      const valid = validator(task);
 
       console.log("valid", valid);
 

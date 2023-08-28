@@ -17,3 +17,8 @@ a{
 input{
   color: var(--slytherin-silver) !important;
 }
+
+
+.btn {
+  background-color: var(--slytherin-green) !important;
+}

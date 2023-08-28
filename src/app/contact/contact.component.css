@@ -1,3 +1,22 @@
+/**
+ * Title: contact.component.css
+ * Author: Professor Krasso
+ * Date: 8/20/2023
+ * Modified By: William Egge
+ * Description: The contact component css file. This is the style sheet for the contact component.
+ */
+
 .map{
   border: 4px solid var(--slytherin-green) ;
+}
+
+
+a {
+  color: var(--slytherin-green) !important;
+}
+
+
+.btn {
+  background-color: var(--slytherin-green) !important;
+  color: var(--slytherin-silver) !important;
 }

@@ -113,9 +113,9 @@ export class TasksComponent {
     let task: Item = {} as Item;
 
     const white = '#ffffff';
-    const green = '#4bce97';
-    const purple = '#9f8fef';
-    const red = '#f87462';
+    const green = 'hsl(110, 60%, 40%)';
+    const purple = 'hsl(95, 50%, 50%)';
+    const red = 'hsl(70, 40%, 60%)';
 
     switch (categoryName) {
       case 'testing':
