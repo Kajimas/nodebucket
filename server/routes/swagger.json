@@ -128,6 +128,78 @@
           "404": { "description": "Not Found" },
           "500": { "description": "Internal Server Error" }
         }
+      },
+      "put": {
+        "summary": "Update tasks for an employee",
+        "operationId": "updateTasksForEmployee",
+        "parameters": [
+          {
+            "name": "empId",
+            "in": "path",
+            "required": true,
+            "description": "Employee ID",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "todo": {
+                    "type": "array",
+                    "items": { "type": "object" }
+                  },
+                  "done": {
+                    "type": "array",
+                    "items": { "type": "object" }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "204": { "description": "Successfully updated tasks" },
+          "400": { "description": "Bad Request" },
+          "404": { "description": "Not Found" },
+          "500": { "description": "Internal Server Error" }
+        }
+      }
+    },
+    "/api/employees/{empId}/tasks/{taskId}": {
+      "delete": {
+        "summary": "Delete a task for an employee",
+        "operationId": "deleteTaskForEmployee",
+        "parameters": [
+          {
+            "name": "empId",
+            "in": "path",
+            "required": true,
+            "description": "Employee ID",
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "taskId",
+            "in": "path",
+            "required": true,
+            "description": "Task ID",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "204": { "description": "Successfully deleted" },
+          "400": { "description": "Bad Request" },
+          "404": { "description": "Not Found" },
+          "500": { "description": "Internal Server Error" }
+        }
       }
     }
   }

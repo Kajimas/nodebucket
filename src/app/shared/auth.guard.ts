@@ -3,7 +3,7 @@
  * Author: Professor Krasso
  * Date: 8/20/2023
  * Modified By: William Egge
- * Description: the auth guard file for the application. This file is used to protect the application from unauthorized users.
+ * Description: the file defines the auth guard that checks to see if the user is logged in by checking the session_user cookie. If the user is logged in, they can access the application. If not, they are redirected to the sign-in page.
  */
 
 import { CanActivateFn, Router } from '@angular/router';

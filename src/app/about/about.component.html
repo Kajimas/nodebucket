@@ -1,59 +1,187 @@
 <!--
   Title: about.component.html
-  Author: William Egge
+  Author: Richard Krasso
   Date: 8/26/2023
+  Modified By: William Egge
   Description: The about component for the Nodebucket application.
  -->
 
-<div class="container-fluid mt-3" style="min-height: 600px">
-  <div>
-    <h2 class="py-3 text-center">Eager to find out more? Learn about NodeBucket here!
-    </h2>
-    <br />
-    <br />
-    <p>
-      NodeBucket, a pioneering organizer in the magical world, is situated in
-      the very crux of all things arcane and mystical. Rooted deeply in the
-      legacy of Hogwarts School of Witchcraft and Wizardry, we draw particular
-      inspiration from the cunning and resourceful house of Slytherin. As
-      magical folks grapple with the intricacies of daily tasks and
-      responsibilities, NodeBucket emerges as an avant-garde solution,
-      redefining the way we manage our daily spells and potions since its
-      conception.
-    </p>
-    <p>
-      Founded by Serpens Listify, a visionary Slytherin graduate, NodeBucket is
-      the epitome of organized chaos. His ambition to blend everyday task
-      management with magical elements breathed life into this illustrious
-      platform. Now, NodeBucket is fortified by an elite coven of the finest
-      witches and wizards - all masters in the arcane arts of time-management
-      and productivity - aiming to serve our users with unparalleled finesse.
-    </p>
-    <p>
-      Our reach spans across various magical communities, from the bustling
-      streets of Diagon Alley to the charming locales of Hogsmeade Village.
-      Whether you're juggling potion ingredients, Quidditch practice, or O.W.L.
-      revisions, NodeBucket ensures that your tasks are handled with the highest
-      level of organization and precision.
-    </p>
-    <p>
-      We place a high value on customization and personal connection. Each of
-      our task-planners is proficient in Divination, effectively predicting the
-      needs of our users. Our special 'Quidditch Planner' has been instrumental
-      in helping young seekers and beaters manage their rigorous training
-      schedules.
-    </p>
-    <p>
-      Yet, what defines NodeBucket at its core are the eternal principles of
-      Slytherin: ingenuity, ambition, and a willingness to explore
-      unconventional solutions. These principles empower us to consistently push
-      the frontiers of magical task management and offer unparalleled service
-      across the wizarding realm.
-    </p>
-    <p>
-      Unveil the enchantment of structured, streamlined, and dependable task
-      management today with NodeBucket. We're not just an application; we're an
-      ally in your magical daily life.
+<header class="container-fluid text-center about">
+  <div class="container p-5">
+    <h1 class="py-3 text-center">About Us</h1>
+
+    <p class="lead">
+      Welcome to NodeBucket, the most cunning task organizer this side of the
+      Forbidden Forest. Rooted in the rich legacy of Hogwarts School of
+      Witchcraft and Wizardry, we draw our essence from the house of Slytherin —
+      cunning, ambitious, resourceful. We're not just about organizing your
+      daily spells and potion recipes; we're about doing it in a manner that
+      would make Salazar Slytherin proud.
     </p>
   </div>
+</header>
+
+<div class="container my-5">
+  <div class="row">
+    <!-- task column -->
+    <div class="col-md-7">
+      <h2 class="display-3">Task Management with a Magical Twist</h2>
+      <br />
+      <br />
+
+      <p class="lead">
+        NodeBucket is no ordinary task manager. This is where you can organize
+        your schemes, master plans, and even your Quidditch practice schedule.
+        Create, view, and edit tasks with a flick of your wand, or just a drag
+        and drop for the Muggles among us.
+      </p>
+      <p class="lead">What Our Users Are Saying:</p>
+      <ul>
+        <li>
+          "NodeBucket is my secret weapon to winning the House Cup! Task
+          management has never been so magical."
+        </li>
+        <li>
+          "Sorting Hat sorted me into Slytherin, but NodeBucket sorted out my
+          life!"
+        </li>
+        <li>
+          "Brought order to my chaos. Even Professor Snape would approve."
+        </li>
+        <li>
+          "I use NodeBucket every day; it's like the Room of Requirement for my
+          tasks."
+        </li>
+      </ul>
+    </div>
+    <!-- end task column -->
+
+    <div class="col-md-5">
+      <img
+        class="img-fluid rounded"
+        src="./assets/ouroboros-logo.png
+        "
+        alt="snake logo"
+      />
+    </div>
+  </div>
+  <!-- end task row -->
+
+  <hr class="my-5" />
+
+  <div class="row">
+    <div class="col-md-5">
+      <img
+        src="./assets/mobile-nodebucket.jpeg"
+        alt="NodeBucket on mobile device"
+        class="img-fluid rounded"
+      />
+      <p>
+        Based on an image by Matteo Vella on
+        <a href="https://unsplash.com/photos/_HB3Y1wGlxw">Unsplash</a>
+      </p>
+    </div>
+    <div class="col-md-7">
+      <h2 class="display-3">Wickedly Accessible</h2>
+      <br />
+      <br />
+
+      <p class="lead">
+        Your plans for wizarding world domination shouldn't be restricted by
+        your location. Access NodeBucket from any mobile device, whether you're
+        in the dungeons or visiting Diagon Alley.
+      </p>
+    </div>
+  </div>
+
+  <hr class="my-5" />
+
+  <div class="row">
+    <div class="col-md-12">
+      <br />
+      <br />
+      <h2 class="display-3 text-center">Meet The Team Behind The Magic</h2>
+      <br />
+      <br />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-7">
+      <p class="lead">
+        <strong>Ayden Davis</strong> - Meet Ayden, our very own Potions Master
+        in the realm of coding. With over 30 years of experience, this
+        full-stack developer has been perfecting the recipe for seamless task
+        management. Ayden holds a master's degree in Computer Science from the
+        University of Washington and is also a certified Scrum Master, adding a
+        modern twist to ancient spells.
+      </p>
+    </div>
+
+    <div class="col-md-5">
+      <img
+        src="./assets/ayden-davis.jpg"
+        alt="ayden davis photo"
+        class="img-fluid rounded"
+      />
+      <p>
+        image generated with
+        <a href="https://leonardo.ai/">leonardo.ai</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="row my-5">
+    <div class="col-md-7">
+      <p class="lead">
+        <strong> Lili Carlson </strong> - A rising star in the Slytherin
+        lineage, Lili has 2 years of experience and the ambition to match.
+        Holding a bachelor's degree in Computer Science and currently pursuing
+        her master's, she's a wizard when it comes to JavaScript and Angular.
+        She's also a published author, writing the modern spellbooks for the
+        next generation of magical folk.
+      </p>
+    </div>
+
+    <div class="col-md-5">
+      <img
+        src="./assets/lili-carlson.jpg"
+        alt="lili carlson photo"
+        class="img-fluid rounded"
+      />
+      <p>
+        image generated with
+        <a href="https://leonardo.ai/">leonardo.ai</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="row my-5">
+    <div class="col-md-7">
+      <p class="lead">
+        <strong> Eleanor Grimes </strong> - Introducing Eleanor, the Schemer and
+        Strategist behind NodeBucket's impenetrable operations. While not as
+        seasoned as her counterparts, her knack for resourcefulness and cunning
+        put her in a league of her own. Specializing in DevOps, Eleanor ensures
+        that the operation runs smoother than a freshly brewed Draught of Living
+        Death. A graduate of the University of Washington focusing on
+        Information Systems, Eleanor is the guardian of NodeBucket's enchanted
+        digital fortress.
+      </p>
+    </div>
+
+    <div class="col-md-5">
+      <img
+        src="./assets/eleanor-grimes.jpg
+        "
+        alt="eleanor grimes photo"
+        class="img-fluid rounded"
+      />
+      <p>
+        image generated with
+        <a href="https://leonardo.ai/">leonardo.ai</a>
+      </p>
+    </div>
+  </div>
+  <!-- end container -->
 </div>

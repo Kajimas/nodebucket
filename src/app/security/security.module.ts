@@ -2,6 +2,8 @@
  * Title: security.module.ts
  * Author: Professor Krasso
  * Date: 8/5/23
+ * Modified By: William Egge
+ * Description: This file defines the security module for the application, bringing together various dependencies needed for the security features like the sign-in. Within the NgModule decorator, it declares SecurityComponent and SigninComponent, as well as making various imports.
  */
 
 // imports statements

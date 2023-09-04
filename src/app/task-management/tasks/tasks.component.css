@@ -6,17 +6,25 @@
  * Description: The tasks component css file. This is the style sheet for the tasks component.
  */
 
+.task-column {
+  min-height: 200px;
+}
+
+
 input.form-control.ng-untouched.ng-pristine.ng-invalid {
   /* background-color: var(--slytherin-grey) !important; */
   color: var(--slytherin-black) !important;
 }
 
 input {
-  background-color: var(--slytherin-silver) !important;
+
   color: var(--slytherin-black) !important;
 }
 
 .btn {
-  background-color: var(--slytherin-green);
   color: var(--slytherin-white) !important;
+}
+
+.task-hover:hover {
+  cursor: pointer;
 }

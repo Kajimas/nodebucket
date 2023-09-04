@@ -3,7 +3,7 @@
  * Author: Professor Krasso
  * Date: 8/20/2023
  * Modified By: William Egge
- * Description: the app module file for the application. This file is used to import the components and modules for the application.
+ * Description: this is the root module for the application. it imports necessary modules and components as well as various custom components. The NgModule decorator configures these imports, declarations, and other settings to bootstrap the application with the AppComponent as the root component.
  */
 
 // imports statements
@@ -19,7 +19,7 @@ import { FooterComponent } from './layouts/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
-
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -29,14 +29,11 @@ import { AboutComponent } from './about/about.component';
     NavComponent,
     FooterComponent,
     ContactComponent,
-    AboutComponent
+    AboutComponent,
+    NotFoundComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

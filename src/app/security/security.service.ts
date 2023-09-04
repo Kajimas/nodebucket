@@ -3,7 +3,7 @@
  * Author: Professor Krasso
  * Date: 8/20/2023
  * Modified By: William Egge
- * Description: the security service file for the application. This file is used to find an employee by id.
+ * Description: this file defines the security service for the application. it imports the HttpClient to make HTTP requests to the API. It also has a findEmployeeById method that takes an employee ID as a parameter and returns the employee data from the API.
  */
 
 import { Injectable } from '@angular/core';

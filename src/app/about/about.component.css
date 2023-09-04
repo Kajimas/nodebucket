@@ -1,0 +1,12 @@
+/* *
+ * Title: styles.css
+ * Author: Professor Krasso
+ * Date: 9/3/2023
+ * Modified By: William Egge
+ * Description: Styles the about component. the background color is set to grey and the margin-top is set to -1%.
+ */
+
+.about {
+  background-color: #f2f2f2 important!;
+  margin-top: -1%;
+}

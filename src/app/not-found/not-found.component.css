@@ -1,0 +1,10 @@
+/**
+ * Title: not-found.component.css
+ * Author: William Egge
+ * Date: 9/3/2023
+ * Description: The not-found component css file. This is the style sheet for the 404 page.
+ */
+
+.large-number {
+  font-size: 1000%;
+}
