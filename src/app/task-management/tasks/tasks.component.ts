@@ -190,8 +190,8 @@ export class TasksComponent {
 
     const white = '#ffffff';
     const green = 'hsl(110, 60%, 40%)';
-    const purple = 'hsl(95, 50%, 50%)';
-    const red = 'hsl(70, 40%, 60%)';
+    const violet = 'violet';
+    const orange = 'orange';
 
     switch (categoryName) {
       case 'testing':
@@ -208,7 +208,7 @@ export class TasksComponent {
           text: text,
           category: {
             categoryName: categoryName,
-            backgroundColor: red,
+            backgroundColor: orange,
           },
         };
         return task;
@@ -217,7 +217,7 @@ export class TasksComponent {
           text: text,
           category: {
             categoryName: categoryName,
-            backgroundColor: purple,
+            backgroundColor: violet,
           },
         };
         return task;
